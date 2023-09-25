@@ -2,18 +2,18 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>ETL ASM Integration Services Project</Name>
-    <LastWriteTime>2023-08-19T12:33:35.0601069Z</LastWriteTime>
+    <LastWriteTime>2023-09-25T09:10:45.3140748Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Initial_Load.dtsx</Name>
-      <LastWriteTime>2023-08-19T12:33:32.4308716Z</LastWriteTime>
+      <LastWriteTime>2023-09-25T09:10:40.747379Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>Incremental_Load.dtsx</Name>
-      <LastWriteTime>2023-08-19T12:33:22.7784764Z</LastWriteTime>
+      <LastWriteTime>2023-09-25T09:13:07.1310657Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

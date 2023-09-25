@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="46"
-  DTS:VersionGUID="{49B931E7-1D07-43CE-AA04-3DFF2C18EB53}">
+  DTS:VersionBuild="48"
+  DTS:VersionGUID="{294A401E-C3CE-4907-8C04-A8350666D05D}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -226,7 +226,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=HIEU;User ID=;Initial Catalog=PetFinder;Provider=MSOLEDBSQL.1;Persist Security Info=False;Integrated Security=SSPI;Initial File Name=;Server SPN=;Authentication=;Access Token=;Application Name=SSIS-Package-{460AD124-F167-4462-BA56-710FC020DFF4}HIEU.PetFinder;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=HIEU;Initial Catalog=PetFinder;Provider=MSOLEDBSQL.1;Persist Security Info=False;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{460AD124-F167-4462-BA56-710FC020DFF4}HIEU.PetFinder;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -5871,7 +5871,7 @@
       DTS:refId="Package\Mark Initial Load End"
       DTS:CreationName="Attunity.CdcControlTask"
       DTS:Description="CDC Control Task"
-      DTS:DTSID="{C62ECC98-F9C6-4696-AD38-288E8394CCF4}"
+      DTS:DTSID="{DCA98CC5-60B8-436A-AECE-7E5145B30A67}"
       DTS:ExecutableType="Attunity.CdcControlTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Mark Initial Load End"
@@ -5897,7 +5897,7 @@
       DTS:refId="Package\Mark Initial Load Start"
       DTS:CreationName="Attunity.CdcControlTask"
       DTS:Description="CDC Control Task"
-      DTS:DTSID="{569E65F5-920C-49DE-9AF0-F4FB131F9632}"
+      DTS:DTSID="{2E75D023-7EF4-4863-84BE-9A58FD6F74A3}"
       DTS:ExecutableType="Attunity.CdcControlTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Mark Initial Load Start"
@@ -9132,7 +9132,7 @@ where [refTable].[MedicalStatus] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
-      DTS:DTSID="{838A4ACB-E31C-4E32-951F-CCB5C1B5316D}"
+      DTS:DTSID="{897ACF7D-F535-4998-961E-1A8F8574A37D}"
       DTS:From="Package\Mark Initial Load Start"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
@@ -9140,7 +9140,7 @@ where [refTable].[MedicalStatus] = ?</property>
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
       DTS:CreationName=""
-      DTS:DTSID="{500A017E-42B3-4697-BEFA-B783A2B4EF41}"
+      DTS:DTSID="{F4780A21-851E-446E-B69E-0F78438ED154}"
       DTS:From="Package\PetFACT"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
@@ -9161,7 +9161,7 @@ where [refTable].[MedicalStatus] = ?</property>
         <NodeLayout
           Size="170.4,41.6"
           Id="Package\CSV to SQL Source"
-          TopLeft="292.272715658853,44.2787882306841" />
+          TopLeft="289.242412748963,52.9454549662273" />
         <NodeLayout
           Size="128.8,41.6"
           Id="Package\Load Dim Tables\BreedDIM"
@@ -9204,22 +9204,14 @@ where [refTable].[MedicalStatus] = ?</property>
           PanelSize="524.8,185.6"
           Size="524.8,228.8"
           Id="Package\Load Dim Tables"
-          TopLeft="119.606065847055,116.845453561147" />
-        <NodeLayout
-          Size="176,41.6"
-          Id="Package\Mark Initial Load End"
-          TopLeft="596.666642957265,368.400002851486" />
-        <NodeLayout
-          Size="179.2,41.6"
-          Id="Package\Mark Initial Load Start"
-          TopLeft="52.4999979138375,41.6666669215097" />
+          TopLeft="116.575762937165,125.51212029669" />
         <NodeLayout
           Size="124,41.6"
           Id="Package\PetFACT"
-          TopLeft="317.272741686214,374.945456309319" />
+          TopLeft="314.242438776324,383.612123044862" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="380.639403766634,345.645453561147">
+          TopLeft="377.609100856744,354.31212029669">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -9241,7 +9233,7 @@ where [refTable].[MedicalStatus] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="379.739390752954,85.8787882306841">
+          TopLeft="376.709087843064,94.5454549662273">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -9261,20 +9253,24 @@ where [refTable].[MedicalStatus] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="179.2,41.6"
+          Id="Package\Mark Initial Load Start"
+          TopLeft="45.8333315120804,54.6000004339218" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="231.699997913838,63.7727275760969">
+          TopLeft="225.03333151208,74.5727277000745">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="60.5727177450154,0"
+              EndConnector="64.2090812368826,0"
               Start="0,0"
-              End="53.0727177450154,0">
+              End="56.7090812368826,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="53.0727177450154,0" />
+                    End="56.7090812368826,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -9283,20 +9279,24 @@ where [refTable].[MedicalStatus] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="176,41.6"
+          Id="Package\Mark Initial Load End"
+          TopLeft="544.999978343647,388.466669607693" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="441.272741686214,392.472729580403">
+          TopLeft="438.242438776324,406.839396326277">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="155.393901271051,0"
+              EndConnector="106.757539567323,0"
               Start="0,0"
-              End="147.893901271051,0">
+              End="99.2575395673226,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="147.893901271051,0" />
+                    End="99.2575395673226,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
