@@ -9,8 +9,9 @@ The raw data file is extracted from the system as a CSV. The sample is shown bel
 We need to create a data pipeline from this csv file and put all the data into the data warehouse!
 
 # Data Pipeline tools
-Flat File Source: CSV | ETL: SQL Server Integration Services (SSIS) on Visual Studio | Database: Microsoft SQL server
-![Screenshot 2023-08-19 195102](https://github.com/nch13/PetFinder-DW/assets/140384066/87e7b2be-13e2-4590-a918-5e8ac22e8073)
+Flat File Source: CSV | ETL: SQL Server Integration Services (SSIS) on Visual Studio | Database: Microsoft SQL server | Visualization: Power BI
+![image](https://github.com/nch13/PetFinder-DW/assets/140384066/3d320b27-dac3-4565-88be-d6877d248ba7)
+
 
 
 # ERD Diagram
@@ -32,3 +33,8 @@ Full Load takes a lot of time and reduces sync performance. Therefore, design an
 # Data Warehouse
 All data has been put into an archive, where we can use it to perform business queries, or visualization. Below is FACT table
 ![Screenshot 2023-08-19 202015](https://github.com/nch13/PetFinder-DW/assets/140384066/4062ce05-1689-42aa-b29a-9c08bee29bb1)
+
+# Visualization
+Finally, I import data into Power BI from MS SQL. We can use the filter to know whether the dog/cat has been vaccinated/dewormed/sterilized? We can also filter by region.
+![image](https://github.com/nch13/PetFinder-DW/assets/140384066/d7eb427a-7886-41de-81a0-eca8b40eeedd)
+
