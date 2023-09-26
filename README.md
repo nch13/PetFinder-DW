@@ -36,5 +36,6 @@ All data has been put into an archive, where we can use it to perform business q
 
 # Visualization
 Finally, I import data into Power BI from MS SQL. We can use the filter to know whether the dog/cat has been vaccinated/dewormed/sterilized? We can also filter by region.
-![image](https://github.com/nch13/PetFinder-DW/assets/140384066/d7eb427a-7886-41de-81a0-eca8b40eeedd)
+![image](https://github.com/nch13/PetFinder-DW/assets/140384066/358bb1a5-56ef-4ab3-93e8-1d12bd314f9f)
+
 
