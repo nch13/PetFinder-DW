@@ -69,5 +69,6 @@ Select * From [dbo].[FurLengthDIM]
 Select * From [dbo].[MaturitySizeDIM]
 Select * From [dbo].[HealthDIM]
 Select * From [dbo].[MedicalStatusDIM]
-Select * From [dbo].[PetFACT]
+Select COUNT(*) From [dbo].[PetFACT]
+where TypeKey = 2
 Go
